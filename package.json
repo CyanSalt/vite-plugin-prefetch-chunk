@@ -1,0 +1,50 @@
+{
+  "name": "vite-plugin-prefetch-chunk",
+  "version": "0.1.0-0",
+  "description": "Vite plugin for adding prefetch resource hints in HTML",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "lint": "eslint --ignore-path .gitignore --fix --ext .js,.ts .",
+    "prepack": "unbuild",
+    "release": "release-it"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CyanSalt/vite-plugin-prefetch-chunk.git"
+  },
+  "keywords": [
+    "vite",
+    "plugin",
+    "html"
+  ],
+  "author": "CyanSalt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CyanSalt/vite-plugin-prefetch-chunk/issues"
+  },
+  "homepage": "https://github.com/CyanSalt/vite-plugin-prefetch-chunk#readme",
+  "peerDependencies": {
+    "vite": ">=2.0.0"
+  },
+  "devDependencies": {
+    "@cyansalt/eslint-config-preset": "^1.15.0",
+    "@cyansalt/tsconfig": "^2.2.1",
+    "@release-it/conventional-changelog": "^7.0.2",
+    "release-it": "^16.2.1",
+    "typescript": "^5.2.2",
+    "unbuild": "^2.0.0",
+    "vite": "^4.5.0"
+  }
+}
