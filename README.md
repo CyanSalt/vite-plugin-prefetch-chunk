@@ -12,6 +12,8 @@ Prefetch links will consume bandwidth, which is often unacceptable if you have a
 
 Prefetch links are always generated at the end of head. You can refer to [`vite-plugin-html-sort-tags`](https://github.com/CyanSalt/vite-plugin-html-sort-tags) if you want to optimize the sorting.
 
+Also see [`vite-plugin-auto-preload`](https://github.com/CyanSalt/vite-plugin-auto-preload) if you want to generate preload or module preload links.
+
 ## Installation
 
 ```shell
