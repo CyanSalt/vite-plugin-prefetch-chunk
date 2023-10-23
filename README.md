@@ -10,6 +10,8 @@ In most cases, prefetching all asynchronous chunks is not a wise choice, especia
 
 Prefetch links will consume bandwidth, which is often unacceptable if you have a large app with many async chunks and your users are primarily mobile and thus bandwidth-aware. Therefore, this plugin is designed to be used in a way that requires manual declaration on the asynchronous module that you want to be prefetched.
 
+Prefetch links are always generated at the end of head. You can refer to [`vite-plugin-html-sort-tags`](https://github.com/CyanSalt/vite-plugin-html-sort-tags) if you want to optimize the sorting.
+
 ## Installation
 
 ```shell
