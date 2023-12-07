@@ -2,6 +2,7 @@
   "name": "vite-plugin-prefetch-chunk",
   "version": "0.1.1",
   "description": "Vite plugin for adding prefetch resource hints in HTML",
+  "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -39,13 +40,13 @@
     "vite": ">=2.0.0"
   },
   "devDependencies": {
-    "@cyansalt/eslint-config-preset": "^1.15.0",
+    "@cyansalt/eslint-config-preset": "^1.17.0",
     "@cyansalt/tsconfig": "^2.2.1",
-    "@release-it/conventional-changelog": "^7.0.2",
-    "@types/node": "^20.8.10",
-    "release-it": "^16.2.1",
-    "typescript": "^5.2.2",
+    "@release-it/conventional-changelog": "^8.0.1",
+    "@types/node": "^20.10.4",
+    "release-it": "^17.0.0",
+    "typescript": "^5.3.3",
     "unbuild": "^2.0.0",
-    "vite": "^4.5.0"
+    "vite": "^5.0.6"
   }
 }
