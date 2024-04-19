@@ -124,12 +124,13 @@ const prefetchChunk = (options: Options = {}): Plugin => {
         if (!options.prefetchLegacyChunks && chunk.fileName.includes('-legacy')) return false
         return true
       })
-      const prefetchFiles = new Set<{ href: string, as?: string }>()
+      const prefetchFiles = new Set<{ href: string, as?: string, crossorigin?: true }>()
       for (const chunk of chunks) {
         for (const id of Object.keys(chunk.modules)) {
           if (prefetchModules.has(id)) {
             prefetchFiles.add({
               href: toAssetPathFromHtml(chunk.fileName, htmlPath, config),
+              crossorigin: true,
             })
             const importedCss: Set<string> | undefined = chunk['viteMetadata']?.importedCss
             if (importedCss) {
@@ -137,6 +138,7 @@ const prefetchChunk = (options: Options = {}): Plugin => {
                 prefetchFiles.add({
                   href: toAssetPathFromHtml(file, htmlPath, config),
                   as: 'style',
+                  // disable crossorigin for css prefetch by default
                 })
               }
             }
@@ -151,7 +153,6 @@ const prefetchChunk = (options: Options = {}): Plugin => {
             attrs: {
               rel: 'prefetch',
               ...attrs,
-              crossorigin: true,
             },
             injectTo: 'head',
           }
