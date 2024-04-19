@@ -1,5 +1,12 @@
 
 
+## [0.1.2](https://github.com/CyanSalt/vite-plugin-prefetch-chunk/compare/v0.1.1...v0.1.2) (2024-04-19)
+
+
+### Bug Fixes
+
+* disable css cors by default ([f30b86a](https://github.com/CyanSalt/vite-plugin-prefetch-chunk/commit/f30b86aed7a63b3977e68974a759e518b1806a32))
+
 ## [0.1.1](https://github.com/CyanSalt/vite-plugin-prefetch-chunk/compare/v0.1.0...v0.1.1) (2023-11-02)
 
 
