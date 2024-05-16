@@ -17,7 +17,7 @@
     "dist"
   ],
   "scripts": {
-    "lint": "eslint --ignore-path .gitignore --fix --ext .js,.ts .",
+    "lint": "eslint --fix './**/*.{js,ts}'",
     "prepack": "unbuild",
     "release": "release-it"
   },
@@ -40,7 +40,7 @@
     "vite": ">=2.0.0"
   },
   "devDependencies": {
-    "@cyansalt/eslint-config-preset": "^1.17.0",
+    "@cyansalt/eslint-config": "^4.0.0",
     "@cyansalt/tsconfig": "^2.2.1",
     "@release-it/conventional-changelog": "^8.0.1",
     "@types/node": "^20.10.4",
