@@ -24,6 +24,7 @@
   ],
   "scripts": {
     "lint": "eslint --fix './**/*.{js,ts}'",
+    "lint:ci": "eslint --max-warnings 0 './**/*.{js,ts}'",
     "prepack": "tsdown",
     "release": "release-it"
   },
@@ -42,6 +43,24 @@
     "url": "https://github.com/CyanSalt/vite-plugin-prefetch-chunk/issues"
   },
   "homepage": "https://github.com/CyanSalt/vite-plugin-prefetch-chunk#readme",
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": "^24.15.0",
+      "onFail": "error"
+    },
+    "packageManager": [
+      {
+        "name": "pnpm",
+        "version": "^11.0.0",
+        "onFail": "error"
+      },
+      {
+        "name": "npm",
+        "onFail": "ignore"
+      }
+    ]
+  },
   "peerDependencies": {
     "vite": ">=2.0.0"
   },
