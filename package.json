@@ -65,14 +65,14 @@
     "vite": ">=2.0.0"
   },
   "devDependencies": {
-    "@cyansalt/eslint-config": "^4.0.0",
-    "@cyansalt/tsconfig": "^3.0.0",
-    "@release-it/conventional-changelog": "^8.0.1",
-    "@types/node": "^20.10.4",
-    "eslint": "^9.3.0",
-    "release-it": "^17.0.0",
-    "tsdown": "^0.16.7",
-    "typescript": "^5.3.3",
-    "vite": "^5.0.6"
+    "@cyansalt/eslint-config": "^4.6.0",
+    "@cyansalt/tsconfig": "^3.0.2",
+    "@release-it/conventional-changelog": "^11.0.0",
+    "@types/node": "^24.12.3",
+    "eslint": "^10.3.0",
+    "release-it": "^20.0.1",
+    "tsdown": "^0.22.0",
+    "typescript": "^5.9.3",
+    "vite": "^8.0.11"
   }
 }
